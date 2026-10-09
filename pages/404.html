@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found | Frame & Preserve</title>
+    <meta name="description" content="Page not found.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        ivory: '#F8F6F1',
+                        paper: '#FFFFFF',
+                        charcoal: '#222222',
+                        'warm-gray': '#6E6A63',
+                        border: '#DDD8CF',
+                        accent: '#8A6A45',
+                        'accent-dark': '#684D31',
+                        'dark-bg': '#171717',
+                        'dark-surface': '#222222',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238A6A45' stroke-width='2' stroke-linecap='square'%3E%3Cpath d='M4 4h16v16H4z'/%3E%3Cpath d='M8 8h8v8H8z'/%3E%3C/svg%3E">
+</head>
+<body class="bg-ivory dark:bg-dark-bg text-charcoal dark:text-paper font-sans transition-colors duration-300">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-ivory/90 dark:bg-dark-bg/90 backdrop-blur-md border-b border-border dark:border-dark-surface transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="../index.html" class="flex items-center gap-2 group">
+                        <svg class="w-8 h-8 text-accent group-hover:text-accent-dark transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M4 4h16v16H4z"/>
+                            <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M8 8h8v8H8z"/>
+                        </svg>
+                        <span class="font-serif font-semibold text-xl tracking-wide">FRAME & PRESERVE</span>
+                    </a>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <div class="relative group">
+                        <button class="nav-link flex items-center gap-1 hover:text-accent transition-colors">
+                            Home
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-paper dark:bg-dark-surface border border-border dark:border-dark-surface shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="../index.html" class="block px-4 py-2 hover:bg-ivory dark:hover:bg-charcoal transition-colors">Classic Studio</a>
+                            <a href="home-2.html" class="block px-4 py-2 hover:bg-ivory dark:hover:bg-charcoal transition-colors">Modern Atelier</a>
+                        </div>
+                    </div>
+                    <a href="services.html" class="nav-link hover:text-accent transition-colors">Services</a>
+                    <a href="gallery.html" class="nav-link hover:text-accent transition-colors">Gallery</a>
+                    <a href="contact.html" class="nav-link hover:text-accent transition-colors">Contact</a>
+                    
+                    <div class="flex items-center gap-4 pl-4 border-l border-border dark:border-dark-surface">
+                        <button class="theme-toggle p-2 hover:text-accent transition-colors" aria-label="Toggle Theme">
+                            <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+                            <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                        </button>
+                        <button class="rtl-toggle p-2 hover:text-accent transition-colors" aria-label="Toggle RTL"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg></button>
+                        
+                        <a href="contact.html" class="bg-charcoal dark:bg-paper text-paper dark:text-charcoal px-5 py-2 hover:bg-accent dark:hover:bg-border transition-colors text-sm font-medium">Get a Quote</a>
+                    </div>
+                </div>
+
+                <div class="lg:hidden flex items-center gap-4">
+                    <button id="mobile-menu-btn" class="p-2 hover:text-accent transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden lg:hidden bg-paper dark:bg-dark-surface border-b border-border dark:border-dark-surface">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <div class="font-medium px-3 py-2 text-warm-gray">Home</div>
+                <a href="../index.html" class="block px-6 py-2 hover:bg-ivory dark:hover:bg-charcoal">Classic Studio</a>
+                <a href="home-2.html" class="block px-6 py-2 hover:bg-ivory dark:hover:bg-charcoal">Modern Atelier</a>
+                <a href="services.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Services</a>
+                <a href="gallery.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Gallery</a>
+                <a href="contact.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Contact</a>
+                <div class="border-t border-border dark:border-dark-surface my-2"></div>
+                <div class="flex justify-start gap-4 px-3 py-2 border-t border-border dark:border-dark-surface mt-2 pt-4">
+                    <button class="theme-toggle p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center gap-2" aria-label="Toggle Theme">
+                        <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+                        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                        <span class="text-sm">Theme</span>
+                    </button>
+                    <button class="rtl-toggle p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center gap-2" aria-label="Toggle RTL">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+                        <span class="text-sm">Layout</span>
+                    </button>
+                </div>
+                
+                <a href="contact.html" class="bg-charcoal dark:bg-paper text-paper dark:text-charcoal px-5 py-2 hover:bg-accent dark:hover:bg-border transition-colors text-sm font-medium">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="pt-20">
+        <section class="min-h-[80vh] flex items-center justify-center bg-paper dark:bg-dark-bg text-center px-4">
+            <div>
+                <h1 class="font-serif text-8xl md:text-9xl text-charcoal dark:text-paper opacity-10 mb-4 tracking-wider drop-shadow-2xl">404</h1>
+                <h2 class="font-serif text-3xl md:text-4xl mb-6">Page Not Found</h2>
+                <p class="text-warm-gray mb-10 max-w-md mx-auto">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+                <a href="../index.html" class="inline-block bg-charcoal dark:bg-paper text-paper dark:text-charcoal px-8 py-3 hover:bg-accent dark:hover:bg-border transition-colors font-medium">Return to Homepage</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal dark:bg-dark-bg text-paper pt-16 pb-8 border-t border-dark-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <a href="../index.html" class="flex items-center gap-2 mb-4 group">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M4 4h16v16H4z"/>
+                            <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M8 8h8v8H8z"/>
+                        </svg>
+                        <span class="font-serif font-semibold text-xl tracking-wide">FRAME & PRESERVE</span>
+                    </a>
+                    <p class="text-paper/70 text-sm mb-6">Preserving What Matters. Framing What Inspires. Expert craftsmanship for your most treasured pieces.</p>
+                </div>
+            </div>
+            <div class="border-t border-dark-surface pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-paper/70">
+                <p>&copy; 2026 Frame & Preserve Studio. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Premium Custom Picture Framing & Art Preservation</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/rtl.js"></script>
+</body>
+</html>
