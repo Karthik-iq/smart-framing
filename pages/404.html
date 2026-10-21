@@ -50,7 +50,7 @@
                     </a>
                 </div>
                 
-                <div class="hidden lg:flex items-center space-x-8">
+                <div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
                     <div class="relative group">
                         <button class="nav-link flex items-center gap-1 hover:text-accent transition-colors">
                             Home
@@ -64,6 +64,7 @@
                     <a href="about.html" class="nav-link hover:text-accent transition-colors">About</a>
                     <a href="services.html" class="nav-link hover:text-accent transition-colors">Services</a>
                     <a href="gallery.html" class="nav-link hover:text-accent transition-colors">Gallery</a>
+                    <a href="blog.html" class="nav-link hover:text-accent transition-colors">Blog</a>
                     <a href="contact.html" class="nav-link hover:text-accent transition-colors">Contact</a>
                     
                     <div class="flex items-center gap-4 pl-4 border-l border-border dark:border-dark-surface">
@@ -85,29 +86,30 @@
             </div>
         </div>
         
-        <div id="mobile-menu" class="hidden lg:hidden bg-paper dark:bg-dark-surface border-b border-border dark:border-dark-surface">
-            <div class="px-4 pt-2 pb-4 space-y-1">
+        <div id="mobile-menu" class="hidden lg:hidden bg-paper dark:bg-dark-surface border-b border-border dark:border-dark-surface max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain shadow-2xl">
+            <div class="px-4 pt-2 pb-8 space-y-1">
                 <div class="font-medium px-3 py-2 text-warm-gray">Home</div>
                 <a href="../index.html" class="block px-6 py-2 hover:bg-ivory dark:hover:bg-charcoal">Classic Studio</a>
                 <a href="home-2.html" class="block px-6 py-2 hover:bg-ivory dark:hover:bg-charcoal">Modern Atelier</a>
                 <a href="about.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">About</a>
                 <a href="services.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Services</a>
                 <a href="gallery.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Gallery</a>
+                <a href="blog.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Blog</a>
                 <a href="contact.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Contact</a>
                 <div class="border-t border-border dark:border-dark-surface my-2"></div>
-                <div class="flex justify-start gap-4 px-3 py-2 border-t border-border dark:border-dark-surface mt-2 pt-4">
-                    <button class="theme-toggle p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center gap-2" aria-label="Toggle Theme">
+                <div class="flex items-center gap-3 px-3 py-3 border-t border-border dark:border-dark-surface mt-2">
+                    <button class="theme-toggle flex-1 p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center justify-center gap-2" aria-label="Toggle Theme">
                         <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
                         <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-                        <span class="text-sm">Theme</span>
+                        <span class="text-sm font-medium">Theme</span>
                     </button>
-                    <button class="rtl-toggle p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center gap-2" aria-label="Toggle RTL">
+                    <button class="rtl-toggle flex-1 p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center justify-center gap-2" aria-label="Toggle RTL">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
-                        <span class="text-sm">Layout</span>
+                        <span class="text-sm font-medium">Layout</span>
                     </button>
                 </div>
                 
-                <a href="contact.html" class="bg-charcoal dark:bg-paper text-paper dark:text-charcoal px-5 py-2 hover:bg-accent dark:hover:bg-border transition-colors text-sm font-medium">Get a Quote</a>
+                <a href="contact.html" class="block text-center mt-3 bg-charcoal dark:bg-paper text-paper dark:text-charcoal px-5 py-2.5 hover:bg-accent dark:hover:bg-border transition-colors text-sm font-medium">Get a Quote</a>
             </div>
         </div>
     </nav>

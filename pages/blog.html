@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Atelier Journal | Frame & Preserve</title>
+    <meta name="description" content="Expert insights on museum-grade custom picture framing, art conservation science, and heirloom preservation techniques.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        ivory: '#F8F6F1',
+                        paper: '#FFFFFF',
+                        charcoal: '#222222',
+                        'warm-gray': '#6E6A63',
+                        border: '#DDD8CF',
+                        accent: '#8A6A45',
+                        'accent-dark': '#684D31',
+                        'dark-bg': '#171717',
+                        'dark-surface': '#222222',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238A6A45' stroke-width='2' stroke-linecap='square'%3E%3Cpath d='M4 4h16v16H4z'/%3E%3Cpath d='M8 8h8v8H8z'/%3E%3C/svg%3E">
+</head>
+<body class="bg-ivory dark:bg-dark-bg text-charcoal dark:text-paper font-sans transition-colors duration-300 overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-ivory/90 dark:bg-dark-bg/90 backdrop-blur-md border-b border-border dark:border-dark-surface transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="../index.html" class="flex items-center gap-2 group">
+                        <svg class="w-8 h-8 text-accent group-hover:text-accent-dark transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M4 4h16v16H4z"/>
+                            <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M8 8h8v8H8z"/>
+                        </svg>
+                        <span class="font-serif font-semibold text-xl tracking-wide">FRAME & PRESERVE</span>
+                    </a>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+                    <div class="relative group">
+                        <button class="nav-link flex items-center gap-1 hover:text-accent transition-colors">
+                            Home
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-paper dark:bg-dark-surface border border-border dark:border-dark-surface shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="../index.html" class="block px-4 py-2 hover:bg-ivory dark:hover:bg-charcoal transition-colors">Classic Studio</a>
+                            <a href="home-2.html" class="block px-4 py-2 hover:bg-ivory dark:hover:bg-charcoal transition-colors">Modern Atelier</a>
+                        </div>
+                    </div>
+                    <a href="about.html" class="nav-link hover:text-accent transition-colors">About</a>
+                    <a href="services.html" class="nav-link hover:text-accent transition-colors">Services</a>
+                    <a href="gallery.html" class="nav-link hover:text-accent transition-colors">Gallery</a>
+                    <a href="blog.html" class="nav-link text-accent hover:text-accent transition-colors font-medium">Blog</a>
+                    <a href="contact.html" class="nav-link hover:text-accent transition-colors">Contact</a>
+                    
+                    <div class="flex items-center gap-4 pl-4 border-l border-border dark:border-dark-surface">
+                        <button class="theme-toggle p-2 hover:text-accent transition-colors" aria-label="Toggle Theme">
+                            <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+                            <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                        </button>
+                        <button class="rtl-toggle p-2 hover:text-accent transition-colors" aria-label="Toggle RTL"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg></button>
+                        
+                        <a href="contact.html" class="bg-charcoal dark:bg-paper text-paper dark:text-charcoal px-5 py-2 hover:bg-accent dark:hover:bg-border transition-colors text-sm font-medium">Get a Quote</a>
+                    </div>
+                </div>
+
+                <div class="lg:hidden flex items-center gap-4">
+                    <button id="mobile-menu-btn" class="p-2 hover:text-accent transition-colors" aria-label="Toggle Menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden lg:hidden bg-paper dark:bg-dark-surface border-b border-border dark:border-dark-surface max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain shadow-2xl">
+            <div class="px-4 pt-2 pb-8 space-y-1">
+                <div class="font-medium px-3 py-2 text-warm-gray">Home</div>
+                <a href="../index.html" class="block px-6 py-2 hover:bg-ivory dark:hover:bg-charcoal">Classic Studio</a>
+                <a href="home-2.html" class="block px-6 py-2 hover:bg-ivory dark:hover:bg-charcoal">Modern Atelier</a>
+                <a href="about.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">About</a>
+                <a href="services.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Services</a>
+                <a href="gallery.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Gallery</a>
+                <a href="blog.html" class="block px-3 py-2 bg-ivory dark:bg-charcoal text-accent font-medium">Blog</a>
+                <a href="contact.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Contact</a>
+                <div class="border-t border-border dark:border-dark-surface my-2"></div>
+                <div class="flex items-center gap-3 px-3 py-3 border-t border-border dark:border-dark-surface mt-2">
+                    <button class="theme-toggle flex-1 p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center justify-center gap-2" aria-label="Toggle Theme">
+                        <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+                        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                        <span class="text-sm font-medium">Theme</span>
+                    </button>
+                    <button class="rtl-toggle flex-1 p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center justify-center gap-2" aria-label="Toggle RTL">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+                        <span class="text-sm font-medium">Layout</span>
+                    </button>
+                </div>
+                
+                <a href="contact.html" class="block text-center mt-3 bg-charcoal dark:bg-paper text-paper dark:text-charcoal px-5 py-2.5 hover:bg-accent dark:hover:bg-border transition-colors text-sm font-medium">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="pt-20">
+        <!-- 1. Unified Hero Section (100% Clear Image Visual - Zero Overlays, Crisp Text Shadow) -->
+        <section class="relative w-full h-[65vh] min-h-[480px] max-h-[600px] flex items-center justify-center overflow-hidden bg-charcoal">
+            <img src="https://images.pexels.com/photos/37486400/pexels-photo-37486400.jpeg" alt="Framing workshop craftsmanship" class="absolute inset-0 w-full h-full object-cover">
+            
+            <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white py-8">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-charcoal/85 border border-accent/80 text-accent text-xs tracking-widest uppercase mb-4 sm:mb-6 font-semibold shadow-2xl rounded-full">
+                    Atelier Conservation Journal
+                </div>
+                <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-4 sm:mb-6 font-medium leading-tight px-2 [text-shadow:_0_2px_4px_rgba(0,0,0,0.95),_0_4px_16px_rgba(0,0,0,0.95),_0_8px_32px_rgba(0,0,0,0.95)]">
+                    Insights, Methodologies & Preservation Lore
+                </h1>
+                <p class="text-white text-sm sm:text-base md:text-lg lg:text-xl mb-8 sm:mb-10 max-w-2xl mx-auto font-normal leading-relaxed px-2 [text-shadow:_0_1px_3px_rgba(0,0,0,0.95),_0_3px_12px_rgba(0,0,0,0.95),_0_6px_24px_rgba(0,0,0,0.95)]">
+                    Curatorial essays on museum glass science, fine hardwood joinery, paper stabilization, and generational art conservation.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-xs sm:max-w-none mx-auto">
+                    <a href="#article-1" class="bg-charcoal text-paper hover:bg-accent dark:bg-paper dark:text-charcoal px-8 py-3.5 transition-colors text-xs sm:text-sm font-semibold tracking-wider uppercase shadow-2xl border border-white/20">Read Latest Essay</a>
+                    <a href="contact.html" class="bg-accent text-paper px-8 py-3.5 hover:bg-accent-dark transition-all text-xs sm:text-sm font-semibold tracking-wider uppercase shadow-2xl">Consult Conservators</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Category Filter & Search Bar -->
+        <section class="py-8 bg-paper dark:bg-dark-bg border-b border-border dark:border-dark-surface sticky top-20 z-40 transition-colors">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-wrap items-center justify-between gap-4">
+                    <div class="flex flex-wrap gap-2">
+                        <button class="px-4 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-full bg-accent text-paper transition-colors">All Articles</button>
+                        <button class="px-4 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-full bg-ivory dark:bg-dark-surface text-charcoal dark:text-paper border border-border dark:border-dark-surface hover:border-accent transition-colors">Glass & Optics</button>
+                        <button class="px-4 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-full bg-ivory dark:bg-dark-surface text-charcoal dark:text-paper border border-border dark:border-dark-surface hover:border-accent transition-colors">Paper Archival</button>
+                        <button class="px-4 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-full bg-ivory dark:bg-dark-surface text-charcoal dark:text-paper border border-border dark:border-dark-surface hover:border-accent transition-colors">Joinery & Woods</button>
+                        <button class="px-4 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-full bg-ivory dark:bg-dark-surface text-charcoal dark:text-paper border border-border dark:border-dark-surface hover:border-accent transition-colors">Heirloom Care</button>
+                    </div>
+                    <div class="text-xs text-warm-gray uppercase tracking-widest font-medium">
+                        Showing 6 Curated Essays
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Featured Main Article -->
+        <section class="py-16 bg-ivory dark:bg-dark-surface border-b border-border dark:border-dark-bg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center bg-paper dark:bg-dark-bg border border-border dark:border-dark-surface p-6 sm:p-10 shadow-lg">
+                    <div class="lg:col-span-7">
+                        <div class="aspect-[16/10] overflow-hidden bg-charcoal">
+                            <img src="https://images.pexels.com/photos/34240670/pexels-photo-34240670.jpeg" alt="Museum glass reflection comparison" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 text-xs text-warm-gray uppercase tracking-wider mb-3">
+                                <span class="text-accent font-semibold">Glass & Optics</span>
+                                <span>•</span>
+                                <span>7 min read</span>
+                                <span>•</span>
+                                <span>October 2026</span>
+                            </div>
+                            <h2 class="font-serif text-2xl sm:text-3xl font-medium mb-4 leading-snug">
+                                The Optical Threshold: Why Standard Float Glass Silently Destroys Fine Art
+                            </h2>
+                            <p class="text-warm-gray text-sm leading-relaxed mb-6">
+                                Sunlight contains invisible ultraviolet radiation that breaks photochemical bonds in watercolors, inks, and rag fibers. Discover how magnetron-sputtered anti-reflective coatings eliminate 99% of UV degradation while rendering the glass virtually invisible.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-border dark:border-dark-surface">
+                            <div class="flex items-center gap-3">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200" alt="Julian Vance" class="w-10 h-10 rounded-full object-cover border border-accent/40">
+                                <div>
+                                    <p class="text-xs font-semibold">Julian Vance</p>
+                                    <p class="text-[11px] text-warm-gray">Master Guild Framer</p>
+                                </div>
+                            </div>
+                            <a href="#article-1" class="text-accent hover:text-accent-dark text-xs font-semibold uppercase tracking-wider flex items-center gap-1">
+                                Read Full Essay &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Articles Grid -->
+        <section class="py-20 bg-paper dark:bg-dark-bg border-b border-border dark:border-dark-surface">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-accent text-xs font-semibold tracking-widest uppercase mb-2 block">Curatorial Library</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl">Essential Framing & Conservation Guides</h2>
+                    <p class="text-warm-gray text-sm mt-3">Authoritative research compiled by our conservators, gilders, and timber specialists.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Article 1 -->
+                    <article id="article-1" class="bg-ivory dark:bg-dark-surface border border-border dark:border-dark-surface flex flex-col justify-between overflow-hidden group hover:border-accent transition-all duration-300">
+                        <div>
+                            <div class="aspect-[16/10] overflow-hidden bg-charcoal">
+                                <img src="https://images.pexels.com/photos/40129952/pexels-photo-40129952.jpeg" alt="Japanese mulberry paper hinging" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            </div>
+                            <div class="p-6 sm:p-8">
+                                <div class="flex items-center gap-2 text-xs text-warm-gray uppercase tracking-wider mb-2">
+                                    <span class="text-accent font-semibold">Paper Archival</span>
+                                    <span>•</span>
+                                    <span>5 min read</span>
+                                </div>
+                                <h3 class="font-serif text-xl font-medium mb-3 group-hover:text-accent transition-colors">
+                                    Reversible Hinging: The Sacred Bond of Japanese Kozo Mulberry Paper
+                                </h3>
+                                <p class="text-warm-gray text-sm leading-relaxed mb-4">
+                                    Why pressure-sensitive tapes and scotch products cause irreversible discoloration, and why natural wheat-starch paste remains the gold standard of museum curators.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-4 border-t border-border dark:border-dark-bg flex items-center justify-between text-xs">
+                            <span class="text-warm-gray">Elena Rostova, Conservator</span>
+                    
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="bg-ivory dark:bg-dark-surface border border-border dark:border-dark-surface flex flex-col justify-between overflow-hidden group hover:border-accent transition-all duration-300">
+                        <div>
+                            <div class="aspect-[16/10] overflow-hidden bg-charcoal">
+                                <img src="https://images.pexels.com/photos/8947351/pexels-photo-8947351.jpeg" alt="Hardwood timber grain profiles" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            </div>
+                            <div class="p-6 sm:p-8">
+                                <div class="flex items-center gap-2 text-xs text-warm-gray uppercase tracking-wider mb-2">
+                                    <span class="text-accent font-semibold">Joinery & Woods</span>
+                                    <span>•</span>
+                                    <span>6 min read</span>
+                                </div>
+                                <h3 class="font-serif text-xl font-medium mb-3 group-hover:text-accent transition-colors">
+                                    Walnut, Rift White Oak, and Maple: Anatomy of Sustainable Hardwoods
+                                </h3>
+                                <p class="text-warm-gray text-sm leading-relaxed mb-4">
+                                    A woodworker's guide to natural grain density, expansion allowances, hand-planed splined corners, and chemical-free beeswax and walnut oil finishes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-4 border-t border-border dark:border-dark-bg flex items-center justify-between text-xs">
+                            <span class="text-warm-gray">Julian Vance, Joiner</span>
+                           
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="bg-ivory dark:bg-dark-surface border border-border dark:border-dark-surface flex flex-col justify-between overflow-hidden group hover:border-accent transition-all duration-300">
+                        <div>
+                            <div class="aspect-[16/10] overflow-hidden bg-charcoal">
+                                <img src="https://images.pexels.com/photos/14870469/pexels-photo-14870469.jpeg" alt="Water-gilding with genuine gold leaf" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            </div>
+                            <div class="p-6 sm:p-8">
+                                <div class="flex items-center gap-2 text-xs text-warm-gray uppercase tracking-wider mb-2">
+                                    <span class="text-accent font-semibold">Finishing Crafts</span>
+                                    <span>•</span>
+                                    <span>8 min read</span>
+                                </div>
+                                <h3 class="font-serif text-xl font-medium mb-3 group-hover:text-accent transition-colors">
+                                    The 15th-Century Art of Water-Gilding: 22K Gold and Rabbit-Skin Bole
+                                </h3>
+                                <p class="text-warm-gray text-sm leading-relaxed mb-4">
+                                    Exploring the medieval method of laying micro-thin genuine gold leaves over hand-rubbed Armenian bole clay, burnished with natural agate stones.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-4 border-t border-border dark:border-dark-bg flex items-center justify-between text-xs">
+                            <span class="text-warm-gray">Marcus Sterling, Gilder</span>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="bg-ivory dark:bg-dark-surface border border-border dark:border-dark-surface flex flex-col justify-between overflow-hidden group hover:border-accent transition-all duration-300">
+                        <div>
+                            <div class="aspect-[16/10] overflow-hidden bg-charcoal">
+                                <img src="https://images.pexels.com/photos/11696469/pexels-photo-11696469.jpeg" alt="Pure rag cotton matboard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            </div>
+                            <div class="p-6 sm:p-8">
+                                <div class="flex items-center gap-2 text-xs text-warm-gray uppercase tracking-wider mb-2">
+                                    <span class="text-accent font-semibold">Paper Archival</span>
+                                    <span>•</span>
+                                    <span>4 min read</span>
+                                </div>
+                                <h3 class="font-serif text-xl font-medium mb-3 group-hover:text-accent transition-colors">
+                                    De-Acidification & 100% Cotton Rag: Why Wood Pulp Destroys Paper
+                                </h3>
+                                <p class="text-warm-gray text-sm leading-relaxed mb-4">
+                                    Lignin inside ordinary wood pulp degrades into hydrochloric acids. Understanding calcium carbonate buffering and why museum matboards never yellow.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-4 border-t border-border dark:border-dark-bg flex items-center justify-between text-xs">
+                            <span class="text-warm-gray">Elena Rostova, Conservator</span>
+                            
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="bg-ivory dark:bg-dark-surface border border-border dark:border-dark-surface flex flex-col justify-between overflow-hidden group hover:border-accent transition-all duration-300">
+                        <div>
+                            <div class="aspect-[16/10] overflow-hidden bg-charcoal">
+                                <img src="https://images.pexels.com/photos/6842185/pexels-photo-6842185.jpeg" alt="Shadowbox preservation of vintage medals" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            </div>
+                            <div class="p-6 sm:p-8">
+                                <div class="flex items-center gap-2 text-xs text-warm-gray uppercase tracking-wider mb-2">
+                                    <span class="text-accent font-semibold">Heirloom Care</span>
+                                    <span>•</span>
+                                    <span>7 min read</span>
+                                </div>
+                                <h3 class="font-serif text-xl font-medium mb-3 group-hover:text-accent transition-colors">
+                                    Encapsulating 3D History: Shadow Boxes for Medals, Textiles, and Blueprints
+                                </h3>
+                                <p class="text-warm-gray text-sm leading-relaxed mb-4">
+                                    Deep box engineering: preventing moisture condensation, choosing micro-climate thermal barriers, and secure archival stitching for military relics.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-4 border-t border-border dark:border-dark-bg flex items-center justify-between text-xs">
+                            <span class="text-warm-gray">Julian Vance, Joiner</span>
+                
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="bg-ivory dark:bg-dark-surface border border-border dark:border-dark-surface flex flex-col justify-between overflow-hidden group hover:border-accent transition-all duration-300">
+                        <div>
+                            <div class="aspect-[16/10] overflow-hidden bg-charcoal">
+                                <img src="https://images.pexels.com/photos/7305375/pexels-photo-7305375.jpeg" alt="Museum lighting and home installation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            </div>
+                            <div class="p-6 sm:p-8">
+                                <div class="flex items-center gap-2 text-xs text-warm-gray uppercase tracking-wider mb-2">
+                                    <span class="text-accent font-semibold">Installation</span>
+                                    <span>•</span>
+                                    <span>5 min read</span>
+                                </div>
+                                <h3 class="font-serif text-xl font-medium mb-3 group-hover:text-accent transition-colors">
+                                    The Curatorial Hanging Standard: Eye-Level Geometry and Hardware Selection
+                                </h3>
+                                <p class="text-warm-gray text-sm leading-relaxed mb-4">
+                                    The universal 57-inch centerline gallery rule, earthquake-proof French cleats, and silicone standoffs that protect drywall while venting airflow.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-4 border-t border-border dark:border-dark-bg flex items-center justify-between text-xs">
+                            <span class="text-warm-gray">Studio Curatorial Team</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Atelier Newsletter & Consultation Call -->
+        <section class="py-20 bg-ivory dark:bg-dark-surface border-b border-border dark:border-dark-bg">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <span class="text-accent text-xs font-semibold tracking-widest uppercase mb-2 block">Knowledge Dispatches</span>
+                <h2 class="font-serif text-3xl sm:text-4xl mb-4">Subscribe to The Atelier Dispatches</h2>
+                <p class="text-warm-gray text-sm max-w-xl mx-auto mb-8">Receive quarterly publications on conservation science, exhibition reviews, and private framing previews.</p>
+                <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="event.preventDefault(); alert('Thank you for subscribing to The Atelier Dispatches.');">
+                    <input type="email" required placeholder="Enter your email address" class="flex-1 px-4 py-3 bg-paper dark:bg-dark-bg border border-border dark:border-dark-surface text-sm focus:outline-none focus:border-accent">
+                    <button type="submit" class="bg-charcoal dark:bg-paper text-paper dark:text-charcoal px-6 py-3 text-sm font-medium hover:bg-accent dark:hover:bg-border transition-colors">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- 6. Editorial CTA -->
+        <section class="py-24 bg-charcoal text-paper relative overflow-hidden">
+            <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+                <span class="text-accent text-xs font-semibold tracking-widest uppercase mb-3 block">Private Consultations</span>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl mb-6">Have an Artwork or Artifact to Protect?</h2>
+                <p class="text-paper/70 text-base md:text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Consult directly with our master joiners and paper conservators to design an archival enclosure worthy of your piece.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="bg-accent hover:bg-accent-dark text-paper px-8 py-3.5 text-sm font-medium transition-colors">Book Atelier Consultation</a>
+                    <a href="services.html" class="border border-paper/40 hover:bg-paper hover:text-charcoal text-paper px-8 py-3.5 text-sm font-medium transition-colors">Explore All Services</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal dark:bg-dark-bg text-paper pt-16 pb-8 border-t border-dark-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <a href="../index.html" class="flex items-center gap-2 mb-4 group">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M4 4h16v16H4z"/>
+                            <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M8 8h8v8H8z"/>
+                        </svg>
+                        <span class="font-serif font-semibold text-xl tracking-wide">FRAME & PRESERVE</span>
+                    </a>
+                    <p class="text-paper/70 text-sm mb-6">Preserving What Matters. Framing What Inspires. Expert craftsmanship for your most treasured pieces.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="text-paper/70 hover:text-accent transition-colors" aria-label="Instagram">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.181a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="text-paper/70 hover:text-accent transition-colors" aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="text-paper/70 hover:text-accent transition-colors" aria-label="X (formerly Twitter)">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="text-paper/70 hover:text-accent transition-colors" aria-label="YouTube">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="text-paper/70 hover:text-accent transition-colors" aria-label="Pinterest">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.366 18.623 0 12.017 0z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="text-paper/70 hover:text-accent transition-colors" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-serif font-semibold text-lg mb-4 text-paper dark:text-border">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-paper/70">
+                        <li><a href="../index.html" class="hover:text-accent transition-colors">Classic Studio</a></li>
+                        <li><a href="home-2.html" class="hover:text-accent transition-colors">Modern Atelier</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition-colors">About Atelier</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition-colors">Services</a></li>
+                        <li><a href="gallery.html" class="hover:text-accent transition-colors">Gallery</a></li>
+                        <li><a href="blog.html" class="hover:text-accent transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif font-semibold text-lg mb-4 text-paper dark:text-border">Our Location</h4>
+                    <ul class="space-y-2 text-sm text-paper/70">
+                        <li>24 Heritage Lane</li>
+                        <li>Arts District</li>
+                        <li>New York, NY 10001</li>
+                        <li>United States</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif font-semibold text-lg mb-4 text-paper dark:text-border">Contact Studio</h4>
+                    <ul class="space-y-2 text-sm text-paper/70">
+                        <li class="flex items-start gap-2">
+                            <span>24 Heritage Lane, Arts District</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span>+91 98765 43210</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <a href="mailto:hello@frameandpreserve.com" class="hover:text-accent transition-colors">hello@frameandpreserve.com</a>
+                        </li>
+                        <li class="flex items-start gap-2 pt-2">
+                            <span>Mon-Sat: 10:00 AM – 7:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-dark-surface pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-paper/70">
+                <p>&copy; 2026 Frame & Preserve Studio. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Premium Custom Picture Framing & Art Preservation</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/rtl.js"></script>
+    <script src="../js/toast.js"></script>
+</body>
+</html>

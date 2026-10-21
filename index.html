@@ -50,7 +50,7 @@
                     </a>
                 </div>
                 
-                <div class="hidden lg:flex items-center space-x-8">
+                <div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
                     <div class="relative group">
                         <button class="nav-link flex items-center gap-1 hover:text-accent transition-colors">
                             Home
@@ -64,6 +64,7 @@
                     <a href="pages/about.html" class="nav-link hover:text-accent transition-colors">About</a>
                     <a href="pages/services.html" class="nav-link hover:text-accent transition-colors">Services</a>
                     <a href="pages/gallery.html" class="nav-link hover:text-accent transition-colors">Gallery</a>
+                    <a href="pages/blog.html" class="nav-link hover:text-accent transition-colors">Blog</a>
                     <a href="pages/contact.html" class="nav-link hover:text-accent transition-colors">Contact</a>
                     
                     <div class="flex items-center gap-4 pl-4 border-l border-border dark:border-dark-surface">
@@ -85,44 +86,49 @@
             </div>
         </div>
         
-        <div id="mobile-menu" class="hidden lg:hidden bg-paper dark:bg-dark-surface border-b border-border dark:border-dark-surface">
-            <div class="px-4 pt-2 pb-4 space-y-1">
+        <div id="mobile-menu" class="hidden lg:hidden bg-paper dark:bg-dark-surface border-b border-border dark:border-dark-surface max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain shadow-2xl">
+            <div class="px-4 pt-2 pb-8 space-y-1">
                 <div class="font-medium px-3 py-2 text-warm-gray">Home</div>
                 <a href="index.html" class="block px-6 py-2 hover:bg-ivory dark:hover:bg-charcoal">Classic Studio</a>
                 <a href="pages/home-2.html" class="block px-6 py-2 hover:bg-ivory dark:hover:bg-charcoal">Modern Atelier</a>
                 <a href="pages/about.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">About</a>
                 <a href="pages/services.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Services</a>
                 <a href="pages/gallery.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Gallery</a>
+                <a href="pages/blog.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Blog</a>
                 <a href="pages/contact.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Contact</a>
                 <div class="border-t border-border dark:border-dark-surface my-2"></div>
-                <div class="flex justify-start gap-4 px-3 py-2 border-t border-border dark:border-dark-surface mt-2 pt-4">
-                    <button class="theme-toggle p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center gap-2" aria-label="Toggle Theme">
+                <div class="flex items-center gap-3 px-3 py-3 border-t border-border dark:border-dark-surface mt-2">
+                    <button class="theme-toggle flex-1 p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center justify-center gap-2" aria-label="Toggle Theme">
                         <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
                         <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-                        <span class="text-sm">Theme</span>
+                        <span class="text-sm font-medium">Theme</span>
                     </button>
-                    <button class="rtl-toggle p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center gap-2" aria-label="Toggle RTL">
+                    <button class="rtl-toggle flex-1 p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center justify-center gap-2" aria-label="Toggle RTL">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
-                        <span class="text-sm">Layout</span>
+                        <span class="text-sm font-medium">Layout</span>
                     </button>
                 </div>
                 
-                <a href="pages/contact.html" class="bg-charcoal dark:bg-paper text-paper dark:text-charcoal px-5 py-2 hover:bg-accent dark:hover:bg-border transition-colors text-sm font-medium">Get a Quote</a>
+                <a href="pages/contact.html" class="block text-center mt-3 bg-charcoal dark:bg-paper text-paper dark:text-charcoal px-5 py-2.5 hover:bg-accent dark:hover:bg-border transition-colors text-sm font-medium">Get a Quote</a>
             </div>
         </div>
     </nav>
     
     <main class="pt-20">
-<!-- 1. Hero -->
-<section class="relative w-full h-[80vh] flex items-center justify-center overflow-hidden bg-charcoal">
-    <img src="https://i.pinimg.com/1200x/14/61/83/1461834c6eb819901288c6355882d607.jpg" alt="Museum style framing interior" class="absolute inset-0 w-full h-full object-cover opacity-75">
-    <div class="absolute inset-0 bg-charcoal/50 dark:bg-black/60 pointer-events-none"></div>
-    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
-        <h1 class="font-serif text-5xl md:text-7xl text-paper mb-6 font-medium leading-tight drop-shadow-2xl">Frame the Moments<br>That Matter.</h1>
-        <p class="text-lg md:text-xl text-border mb-10 max-w-2xl mx-auto font-light">Bespoke framing and careful preservation crafted to protect the art, memories, and stories you treasure.</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="pages/services.html" class="bg-paper text-charcoal px-8 py-3 hover:bg-ivory transition-colors text-sm font-medium tracking-wide">Explore Our Services</a>
-            <a href="pages/gallery.html" class="bg-transparent border border-paper text-paper px-8 py-3 hover:bg-paper/10 transition-colors text-sm font-medium tracking-wide">View Gallery</a>
+<!-- 1. Hero (100% Clear Image Visual - Zero Overlays, Crisp Text Shadow) -->
+<section class="relative w-full h-[65vh] min-h-[480px] max-h-[600px] flex items-center justify-center overflow-hidden bg-charcoal">
+    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=1920" alt="Museum style framing interior" class="absolute inset-0 w-full h-full object-cover">
+    
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white py-8">
+        <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-4 sm:mb-6 font-medium leading-tight px-2 [text-shadow:_0_2px_4px_rgba(0,0,0,0.95),_0_4px_16px_rgba(0,0,0,0.95),_0_8px_32px_rgba(0,0,0,0.95)]">
+            Frame the Moments<br class="hidden sm:inline"> That Matter.
+        </h1>
+        <p class="text-white text-sm sm:text-base md:text-lg lg:text-xl mb-8 sm:mb-10 max-w-2xl mx-auto font-normal leading-relaxed px-2 [text-shadow:_0_1px_3px_rgba(0,0,0,0.95),_0_3px_12px_rgba(0,0,0,0.95),_0_6px_24px_rgba(0,0,0,0.95)]">
+            Bespoke handcrafted framing and museum-grade preservation crafted to protect the art, memories, and stories you treasure.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-xs sm:max-w-none mx-auto">
+            <a href="pages/services.html" class="bg-charcoal text-paper hover:bg-accent dark:bg-paper dark:text-charcoal px-8 py-3.5 transition-colors text-xs sm:text-sm font-semibold tracking-wider uppercase shadow-2xl border border-white/20">Explore Our Services</a>
+            <a href="pages/gallery.html" class="bg-accent text-paper px-8 py-3.5 hover:bg-accent-dark transition-all text-xs sm:text-sm font-semibold tracking-wider uppercase shadow-2xl">View Gallery</a>
         </div>
     </div>
 </section>
@@ -167,41 +173,69 @@
 <section class="py-24 bg-ivory dark:bg-dark-surface border-b border-border dark:border-dark-bg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
+            <span class="text-accent text-xs font-semibold tracking-widest uppercase mb-2 block">Our Craftsmanship</span>
             <h2 class="font-serif text-3xl md:text-4xl mb-4">Our Services</h2>
-            <p class="text-warm-gray max-w-2xl mx-auto">Comprehensive solutions for display and preservation.</p>
+            <p class="text-warm-gray max-w-2xl mx-auto text-sm sm:text-base">Comprehensive solutions for display and preservation. Click Learn More to explore specific techniques.</p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="bg-paper dark:bg-dark-bg p-8 border border-border dark:border-dark-surface hover:border-accent transition-colors">
-                <div class="w-12 h-12 bg-ivory dark:bg-dark-surface flex items-center justify-center mb-6">
-                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M4 4h16v16H4z"/></svg>
+            <!-- Custom Framing -->
+            <div class="bg-paper dark:bg-dark-bg p-8 border border-border dark:border-dark-surface hover:border-accent transition-all flex flex-col justify-between group shadow-sm hover:shadow-md">
+                <div>
+                    <div class="w-12 h-12 bg-ivory dark:bg-dark-surface flex items-center justify-center mb-6 text-accent group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M4 4h16v16H4z"/></svg>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3">Custom Framing</h3>
+                    <p class="text-warm-gray text-sm mb-6 leading-relaxed">Tailored dimensions and precise fitting for any artwork size. Over 450 solid hardwood and gilded profiles.</p>
                 </div>
-                <h3 class="font-serif text-xl mb-3">Custom Framing</h3>
-                <p class="text-warm-gray text-sm mb-6">Tailored dimensions and precise fitting for any artwork size.Take a Look.</p>
-                <a href="pages/services.html" class="text-accent text-sm font-medium hover:text-accent-dark">Learn More &rarr;</a>
+                <div class="pt-4 border-t border-border/40 dark:border-dark-surface flex items-center justify-between">
+                    
+                    <button onclick="openServiceDetailModal('custom-framing')" class="text-xs text-warm-gray hover:text-accent underline underline-offset-2">Quick View</button>
+                </div>
             </div>
-            <div class="bg-paper dark:bg-dark-bg p-8 border border-border dark:border-dark-surface hover:border-accent transition-colors">
-                <div class="w-12 h-12 bg-ivory dark:bg-dark-surface flex items-center justify-center mb-6">
-                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/></svg>
+
+            <!-- Art Preservation -->
+            <div class="bg-paper dark:bg-dark-bg p-8 border border-border dark:border-dark-surface hover:border-accent transition-all flex flex-col justify-between group shadow-sm hover:shadow-md">
+                <div>
+                    <div class="w-12 h-12 bg-ivory dark:bg-dark-surface flex items-center justify-center mb-6 text-accent group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/></svg>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3">Art Preservation</h3>
+                    <p class="text-warm-gray text-sm mb-6 leading-relaxed">Archival materials to protect from UV and environmental damage. 99% UV-blocking optical glass and rag mats.</p>
                 </div>
-                <h3 class="font-serif text-xl mb-3">Art Preservation</h3>
-                <p class="text-warm-gray text-sm mb-6">Archival materials to protect from UV and environmental damage.Better Frames</p>
-                <a href="pages/services.html" class="text-accent text-sm font-medium hover:text-accent-dark">Learn More &rarr;</a>
+                <div class="pt-4 border-t border-border/40 dark:border-dark-surface flex items-center justify-between">
+                   
+                    <button onclick="openServiceDetailModal('art-preservation')" class="text-xs text-warm-gray hover:text-accent underline underline-offset-2">Quick View</button>
+                </div>
             </div>
-            <div class="bg-paper dark:bg-dark-bg p-8 border border-border dark:border-dark-surface hover:border-accent transition-colors">
-                <div class="w-12 h-12 bg-ivory dark:bg-dark-surface flex items-center justify-center mb-6">
-                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+
+            <!-- Shadow Boxes -->
+            <div class="bg-paper dark:bg-dark-bg p-8 border border-border dark:border-dark-surface hover:border-accent transition-all flex flex-col justify-between group shadow-sm hover:shadow-md">
+                <div>
+                    <div class="w-12 h-12 bg-ivory dark:bg-dark-surface flex items-center justify-center mb-6 text-accent group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3">Shadow Boxes</h3>
+                    <p class="text-warm-gray text-sm mb-6 leading-relaxed">Deep structural frames for 3D objects, military medals, sports jerseys, and sentimental generational heirlooms.</p>
                 </div>
-                <h3 class="font-serif text-xl mb-3">Shadow Boxes</h3>
-                <p class="text-warm-gray text-sm mb-6">Deep frames for three dimension objects and memorabilia from the past.</p>
-                <a href="pages/services.html" class="text-accent text-sm font-medium hover:text-accent-dark">Learn More &rarr;</a>
+                <div class="pt-4 border-t border-border/40 dark:border-dark-surface flex items-center justify-between">
+
+                    <button onclick="openServiceDetailModal('shadow-boxes')" class="text-xs text-warm-gray hover:text-accent underline underline-offset-2">Quick View</button>
+                </div>
             </div>
-            <div class="bg-paper dark:bg-dark-bg p-8 border border-border dark:border-dark-surface hover:border-accent transition-colors">
-                <div class="w-12 h-12 bg-ivory dark:bg-dark-surface flex items-center justify-center mb-6">
-                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+
+            <!-- Canvas Framing -->
+            <div class="bg-paper dark:bg-dark-bg p-8 border border-border dark:border-dark-surface hover:border-accent transition-all flex flex-col justify-between group shadow-sm hover:shadow-md">
+                <div>
+                    <div class="w-12 h-12 bg-ivory dark:bg-dark-surface flex items-center justify-center mb-6 text-accent group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3">Canvas Framing</h3>
+                    <p class="text-warm-gray text-sm mb-6 leading-relaxed">Floating frame profiles and conservation stretching on kiln-dried stretcher bars for fine oils and acrylics.</p>
                 </div>
-                <h3 class="font-serif text-xl mb-3">Canvas Framing</h3>
-                <p class="text-warm-gray text-sm mb-6">Float frames and traditional stretching for original canvas works.</p>
-                <a href="pages/services.html" class="text-accent text-sm font-medium hover:text-accent-dark">Learn More &rarr;</a>
+                <div class="pt-4 border-t border-border/40 dark:border-dark-surface flex items-center justify-between">
+                    
+                    <button onclick="openServiceDetailModal('canvas-framing')" class="text-xs text-warm-gray hover:text-accent underline underline-offset-2">Quick View</button>
+                </div>
             </div>
         </div>
     </div>
@@ -242,7 +276,7 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div class="group relative overflow-hidden aspect-square bg-paper dark:bg-dark-bg">
-                <img src="https://images.unsplash.com/photo-1577720580479-7d839d829c73?q=80&w=800" alt="Museum hallway" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src="https://images.pexels.com/photos/37167204/pexels-photo-37167204.jpeg" alt="Museum hallway" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 bg-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                     <span class="text-paper/80 text-sm mb-1">Museum Style</span>
                     <h3 class="text-paper font-serif text-xl mb-4">Exhibition Hall</h3>
@@ -351,6 +385,7 @@
                         <li><a href="pages/about.html" class="hover:text-accent transition-colors">About Atelier</a></li>
                         <li><a href="pages/services.html" class="hover:text-accent transition-colors">Services</a></li>
                         <li><a href="pages/gallery.html" class="hover:text-accent transition-colors">Gallery</a></li>
+                        <li><a href="pages/blog.html" class="hover:text-accent transition-colors">Blog</a></li>
                         <li><a href="pages/contact.html" class="hover:text-accent transition-colors">Contact</a></li>
                     </ul>
                 </div>
@@ -397,5 +432,104 @@
     <script src="js/toast.js"></script>
     <script src="js/forms.js"></script>
     <script src="js/gallery.js"></script>
+
+    <!-- Interactive Service Quick-View Modal for Learn More (Addresses "required content alone not coming") -->
+    <div id="service-modal" class="fixed inset-0 z-50 bg-charcoal/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-paper dark:bg-dark-surface max-w-xl w-full p-8 border border-border dark:border-dark-surface shadow-2xl relative">
+            <button onclick="closeServiceDetailModal()" class="absolute top-4 right-4 text-warm-gray hover:text-charcoal dark:hover:text-paper p-2 text-xl font-bold" aria-label="Close modal">&times;</button>
+            <div id="service-modal-content">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const serviceData = {
+            'custom-framing': {
+                title: 'Custom Framing Atelier',
+                subtitle: 'Tailored dimensions and heirloom craftsmanship',
+                description: 'Our custom framing service provides precision fabrication for artwork of every dimension. We utilize hand-joined American hardwoods (Walnut, White Oak, Rock Maple) with hand-splined corners for structural integrity.',
+                features: [
+                    'Over 450 distinct artisanal moulding profiles',
+                    'Single, double, and hand-wrapped fabric mats',
+                    'Custom depths from 1 inch to 4 inches',
+                    'Includes archival backing and hanging hardware'
+                ],
+                link: 'pages/services.html#custom-framing'
+            },
+            'art-preservation': {
+                title: 'Museum-Grade Art Preservation',
+                subtitle: 'Conservation science meeting archival permanence',
+                description: 'Preserve the chemistry and vibrancy of your original pieces. We use exclusively 100% cotton rag matboards buffered with calcium carbonate and Optically Pure Museum Glass filtering 99% of harmful UV rays.',
+                features: [
+                    'Tru Vue 99% UV-blocking Museum Glass',
+                    '100% Cotton Rag Acid-Free Matting (pH 8.5)',
+                    'Reversible Japanese mulberry paper hinging',
+                    'Micro-climate dust and humidity sealing'
+                ],
+                link: 'pages/services.html#art-preservation'
+            },
+            'shadow-boxes': {
+                title: 'Heirloom Shadow Boxes',
+                subtitle: 'Deep structural enclosures for three-dimensional treasures',
+                description: 'Engineered specifically for medals, sports jerseys, rare books, and 3D family heirlooms. Every item is hand-stitched or mounted using non-invasive conservation methods without damaging adhesives.',
+                features: [
+                    'Deep-rabbet solid hardwood profiles (2" - 6")',
+                    'Archival hand-sewn invisible stitch mounting',
+                    'Acid-free fabric or linen wrapped interior liners',
+                    'UV reflection-free glazing for crystal visibility'
+                ],
+                link: 'pages/services.html#shadow-boxes'
+            },
+            'canvas-framing': {
+                title: 'Canvas Floater Framing',
+                subtitle: 'Modern floating presentations for original oils and acrylics',
+                description: 'Give original stretched canvases an elegant floating reveal. The artwork appears suspended within a 3/8-inch perimeter gap, allowing the edges of the canvas to remain fully visible.',
+                features: [
+                    'Narrow, medium, and wide face float profiles',
+                    'Recessed mounting prevents contact with painted edges',
+                    'Optional custom hand-stretching on bevelled bars',
+                    'Available in natural hardwoods, matte black, and gold'
+                ],
+                link: 'pages/services.html#canvas-framing'
+            }
+        };
+
+        function openServiceDetailModal(key) {
+            const data = serviceData[key];
+            if (!data) return;
+            const content = `
+                <div class="mb-4">
+                    <span class="text-accent text-xs font-semibold tracking-widest uppercase block mb-1">Service Dossier</span>
+                    <h3 class="font-serif text-2xl font-medium mb-1">${data.title}</h3>
+                    <p class="text-warm-gray text-xs">${data.subtitle}</p>
+                </div>
+                <p class="text-warm-gray text-sm mb-6 leading-relaxed">${data.description}</p>
+                <div class="bg-ivory dark:bg-dark-bg p-4 border border-border dark:border-dark-surface mb-6">
+                    <p class="text-xs font-semibold uppercase tracking-wider mb-2 text-charcoal dark:text-paper">Atelier Inclusions:</p>
+                    <ul class="text-xs space-y-2 text-warm-gray">
+                        ${data.features.map(f => `<li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> ${f}</li>`).join('')}
+                    </ul>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <a href="${data.link}" class="bg-accent text-paper px-6 py-2.5 text-xs font-medium uppercase tracking-wider hover:bg-accent-dark transition-colors">
+                        View Full Service Page &rarr;
+                    </a>
+                    <button onclick="closeServiceDetailModal()" class="text-warm-gray text-xs hover:text-charcoal dark:hover:text-paper">Close</button>
+                </div>
+            `;
+            document.getElementById('service-modal-content').innerHTML = content;
+            document.getElementById('service-modal').classList.remove('hidden');
+        }
+
+        function closeServiceDetailModal() {
+            document.getElementById('service-modal').classList.add('hidden');
+        }
+
+        document.getElementById('service-modal').addEventListener('click', function(e) {
+            if (e.target === this) closeServiceDetailModal();
+        });
+    </script>
+
 </body>
 </html>

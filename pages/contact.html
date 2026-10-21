@@ -50,7 +50,7 @@
                     </a>
                 </div>
                 
-                <div class="hidden lg:flex items-center space-x-8">
+                <div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
                     <div class="relative group">
                         <button class="nav-link flex items-center gap-1 hover:text-accent transition-colors">
                             Home
@@ -64,6 +64,7 @@
                     <a href="about.html" class="nav-link hover:text-accent transition-colors">About</a>
                     <a href="services.html" class="nav-link hover:text-accent transition-colors">Services</a>
                     <a href="gallery.html" class="nav-link hover:text-accent transition-colors">Gallery</a>
+                    <a href="blog.html" class="nav-link hover:text-accent transition-colors">Blog</a>
                     <a href="contact.html" class="nav-link hover:text-accent transition-colors">Contact</a>
                     
                     <div class="flex items-center gap-4 pl-4 border-l border-border dark:border-dark-surface">
@@ -85,41 +86,51 @@
             </div>
         </div>
         
-        <div id="mobile-menu" class="hidden lg:hidden bg-paper dark:bg-dark-surface border-b border-border dark:border-dark-surface">
-            <div class="px-4 pt-2 pb-4 space-y-1">
+        <div id="mobile-menu" class="hidden lg:hidden bg-paper dark:bg-dark-surface border-b border-border dark:border-dark-surface max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain shadow-2xl">
+            <div class="px-4 pt-2 pb-8 space-y-1">
                 <div class="font-medium px-3 py-2 text-warm-gray">Home</div>
                 <a href="../index.html" class="block px-6 py-2 hover:bg-ivory dark:hover:bg-charcoal">Classic Studio</a>
                 <a href="home-2.html" class="block px-6 py-2 hover:bg-ivory dark:hover:bg-charcoal">Modern Atelier</a>
                 <a href="about.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">About</a>
                 <a href="services.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Services</a>
                 <a href="gallery.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Gallery</a>
+                <a href="blog.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Blog</a>
                 <a href="contact.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Contact</a>
                 <div class="border-t border-border dark:border-dark-surface my-2"></div>
-                <div class="flex justify-start gap-4 px-3 py-2 border-t border-border dark:border-dark-surface mt-2 pt-4">
-                    <button class="theme-toggle p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center gap-2" aria-label="Toggle Theme">
+                <div class="flex items-center gap-3 px-3 py-3 border-t border-border dark:border-dark-surface mt-2">
+                    <button class="theme-toggle flex-1 p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center justify-center gap-2" aria-label="Toggle Theme">
                         <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
                         <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-                        <span class="text-sm">Theme</span>
+                        <span class="text-sm font-medium">Theme</span>
                     </button>
-                    <button class="rtl-toggle p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center gap-2" aria-label="Toggle RTL">
+                    <button class="rtl-toggle flex-1 p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center justify-center gap-2" aria-label="Toggle RTL">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
-                        <span class="text-sm">Layout</span>
+                        <span class="text-sm font-medium">Layout</span>
                     </button>
                 </div>
                 
-                <a href="#quote-form" class="bg-charcoal dark:bg-paper text-paper dark:text-charcoal px-5 py-2 hover:bg-accent dark:hover:bg-border transition-colors text-sm font-medium">Get a Quote</a>
+                <a href="contact.html" class="block text-center mt-3 bg-charcoal dark:bg-paper text-paper dark:text-charcoal px-5 py-2.5 hover:bg-accent dark:hover:bg-border transition-colors text-sm font-medium">Get a Quote</a>
             </div>
         </div>
     </nav>
     
     <main class="pt-20">
-<!-- 1. Hero -->
-<section class="relative w-full h-[50vh] flex items-center justify-center bg-charcoal">
-    <img src="https://i.pinimg.com/1200x/8e/5d/bb/8e5dbb41c8e0507b990b486aaf56c0eb.jpg" alt="Contact Studio" class="absolute inset-0 w-full h-full object-cover opacity-75">
-    <div class="absolute inset-0 bg-charcoal/50 dark:bg-black/60 pointer-events-none"></div>
-    <div class="relative z-10 text-center px-4">
-        <h1 class="font-serif text-4xl md:text-6xl text-paper mb-4 drop-shadow-2xl">Let's Frame Something Beautiful.</h1>
-        <p class="text-border text-lg font-light max-w-xl mx-auto">Get in touch to schedule a consultation or request a quote for your project.</p>
+<!-- 1. Hero (100% Clear Image Visual - Zero Overlays, Crisp Text Shadow) -->
+<section class="relative w-full h-[65vh] min-h-[480px] max-h-[600px] flex items-center justify-center overflow-hidden bg-charcoal">
+    <img src="https://images.pexels.com/photos/8784733/pexels-photo-8784733.jpeg" alt="Contact Studio" class="absolute inset-0 w-full h-full object-cover">
+    
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white py-8">
+        
+        <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-4 sm:mb-6 font-medium leading-tight px-2 [text-shadow:_0_2px_4px_rgba(0,0,0,0.95),_0_4px_16px_rgba(0,0,0,0.95),_0_8px_32px_rgba(0,0,0,0.95)]">
+            Let's Frame Something Beautiful.
+        </h1>
+        <p class="text-white text-sm sm:text-base md:text-lg lg:text-xl mb-8 sm:mb-10 max-w-2xl mx-auto font-normal leading-relaxed px-2 [text-shadow:_0_1px_3px_rgba(0,0,0,0.95),_0_3px_12px_rgba(0,0,0,0.95),_0_6px_24px_rgba(0,0,0,0.95)]">
+            Get in touch to schedule a private curatorial consultation or request a custom quotation for your artwork.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-xs sm:max-w-none mx-auto">
+            <a href="#quote-form" class="bg-charcoal text-paper hover:bg-accent dark:bg-paper dark:text-charcoal px-8 py-3.5 transition-colors text-xs sm:text-sm font-semibold tracking-wider uppercase shadow-2xl border border-white/20">Request a Quote</a>
+            <a href="services.html" class="bg-accent text-paper px-8 py-3.5 hover:bg-accent-dark transition-all text-xs sm:text-sm font-semibold tracking-wider uppercase shadow-2xl">Explore Services</a>
+        </div>
     </div>
 </section>
 
@@ -337,6 +348,7 @@
                         <li><a href="about.html" class="hover:text-accent transition-colors">About Atelier</a></li>
                         <li><a href="services.html" class="hover:text-accent transition-colors">Services</a></li>
                         <li><a href="gallery.html" class="hover:text-accent transition-colors">Gallery</a></li>
+                        <li><a href="blog.html" class="hover:text-accent transition-colors">Blog</a></li>
                         <li><a href="contact.html" class="hover:text-accent transition-colors">Contact</a></li>
                     </ul>
                 </div>

@@ -50,7 +50,7 @@
                     </a>
                 </div>
                 
-                <div class="hidden lg:flex items-center space-x-8">
+                <div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
                     <div class="relative group">
                         <button class="nav-link flex items-center gap-1 hover:text-accent transition-colors">
                             Home
@@ -64,6 +64,7 @@
                     <a href="about.html" class="nav-link hover:text-accent transition-colors">About</a>
                     <a href="services.html" class="nav-link hover:text-accent transition-colors">Services</a>
                     <a href="gallery.html" class="nav-link hover:text-accent transition-colors">Gallery</a>
+                    <a href="blog.html" class="nav-link hover:text-accent transition-colors">Blog</a>
                     <a href="contact.html" class="nav-link hover:text-accent transition-colors">Contact</a>
                     
                     <div class="flex items-center gap-4 pl-4 border-l border-border dark:border-dark-surface">
@@ -85,146 +86,261 @@
             </div>
         </div>
         
-        <div id="mobile-menu" class="hidden lg:hidden bg-paper dark:bg-dark-surface border-b border-border dark:border-dark-surface">
-            <div class="px-4 pt-2 pb-4 space-y-1">
+        <div id="mobile-menu" class="hidden lg:hidden bg-paper dark:bg-dark-surface border-b border-border dark:border-dark-surface max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain shadow-2xl">
+            <div class="px-4 pt-2 pb-8 space-y-1">
                 <div class="font-medium px-3 py-2 text-warm-gray">Home</div>
                 <a href="../index.html" class="block px-6 py-2 hover:bg-ivory dark:hover:bg-charcoal">Classic Studio</a>
                 <a href="home-2.html" class="block px-6 py-2 hover:bg-ivory dark:hover:bg-charcoal">Modern Atelier</a>
                 <a href="about.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">About</a>
                 <a href="services.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Services</a>
                 <a href="gallery.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Gallery</a>
+                <a href="blog.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Blog</a>
                 <a href="contact.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Contact</a>
                 <div class="border-t border-border dark:border-dark-surface my-2"></div>
-                <div class="flex justify-start gap-4 px-3 py-2 border-t border-border dark:border-dark-surface mt-2 pt-4">
-                    <button class="theme-toggle p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center gap-2" aria-label="Toggle Theme">
+                <div class="flex items-center gap-3 px-3 py-3 border-t border-border dark:border-dark-surface mt-2">
+                    <button class="theme-toggle flex-1 p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center justify-center gap-2" aria-label="Toggle Theme">
                         <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
                         <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-                        <span class="text-sm">Theme</span>
+                        <span class="text-sm font-medium">Theme</span>
                     </button>
-                    <button class="rtl-toggle p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center gap-2" aria-label="Toggle RTL">
+                    <button class="rtl-toggle flex-1 p-2 bg-ivory dark:bg-dark-bg border border-border dark:border-dark-surface rounded hover:text-accent transition-colors flex items-center justify-center gap-2" aria-label="Toggle RTL">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
-                        <span class="text-sm">Layout</span>
+                        <span class="text-sm font-medium">Layout</span>
                     </button>
                 </div>
                 
-                <a href="contact.html" class="bg-charcoal dark:bg-paper text-paper dark:text-charcoal px-5 py-2 hover:bg-accent dark:hover:bg-border transition-colors text-sm font-medium">Get a Quote</a>
+                <a href="contact.html" class="block text-center mt-3 bg-charcoal dark:bg-paper text-paper dark:text-charcoal px-5 py-2.5 hover:bg-accent dark:hover:bg-border transition-colors text-sm font-medium">Get a Quote</a>
             </div>
         </div>
     </nav>
     
     <main class="pt-20">
-<!-- 1. Hero -->
-<section class="relative w-full h-[60vh] flex items-center justify-center bg-charcoal">
-    <img src="https://i.pinimg.com/236x/02/d3/1f/02d31f8c17470d61e961012e555eb5f8.jpg" alt="Framing Services" class="absolute inset-0 w-full h-full object-cover opacity-75">
-    <div class="absolute inset-0 bg-charcoal/50 dark:bg-black/60 pointer-events-none"></div>
-    <div class="relative z-10 text-center px-4">
-        <h1 class="font-serif text-4xl md:text-6xl text-paper mb-6 drop-shadow-2xl">Crafted to Protect.<br>Designed to Last.</h1>
-        <a href="contact.html" class="bg-paper text-charcoal px-8 py-3 hover:bg-ivory transition-colors text-sm font-medium mt-4 inline-block">Request Consultation</a>
+<!-- 1. Hero (100% Clear Image Visual - Zero Overlays, Crisp Text Shadow) -->
+<section class="relative w-full h-[65vh] min-h-[480px] max-h-[600px] flex items-center justify-center overflow-hidden bg-charcoal">
+    <img src="https://images.pexels.com/photos/5583120/pexels-photo-5583120.jpeg" alt="Framing Services Craftsmanship" class="absolute inset-0 w-full h-full object-cover">
+    
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white py-8">
+        
+        <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-4 sm:mb-6 font-medium leading-tight px-2 [text-shadow:_0_2px_4px_rgba(0,0,0,0.95),_0_4px_16px_rgba(0,0,0,0.95),_0_8px_32px_rgba(0,0,0,0.95)]">
+            Crafted to Protect.<br class="hidden sm:inline"> Designed to Last.
+        </h1>
+        <p class="text-white text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl mx-auto font-normal leading-relaxed mb-8 sm:mb-10 px-2 [text-shadow:_0_1px_3px_rgba(0,0,0,0.95),_0_3px_12px_rgba(0,0,0,0.95),_0_6px_24px_rgba(0,0,0,0.95)]">
+            Every frame engineered in our atelier balances museum conservation science with bespoke aesthetics. Discover our specialized framing techniques.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-xs sm:max-w-none mx-auto">
+            <a href="contact.html" class="bg-charcoal text-paper hover:bg-accent dark:bg-paper dark:text-charcoal px-8 py-3.5 transition-colors text-xs sm:text-sm font-semibold tracking-wider uppercase shadow-2xl border border-white/20">Request Consultation</a>
+            <a href="gallery.html" class="bg-accent text-paper px-8 py-3.5 hover:bg-accent-dark transition-all text-xs sm:text-sm font-semibold tracking-wider uppercase shadow-2xl">View Portfolio</a>
+        </div>
     </div>
 </section>
 
-<!-- 2. Custom Framing -->
-<section class="py-24 bg-paper dark:bg-dark-bg border-b border-border dark:border-dark-surface">
+<!-- 2. Custom Framing (Expanded Comprehensive Content Text - Issue 7) -->
+<section id="custom-framing" class="py-20 md:py-24 bg-paper dark:bg-dark-bg border-b border-border dark:border-dark-surface">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row gap-16 items-center">
-            <div class="md:w-1/2">
-                <img src="https://i.pinimg.com/1200x/bc/f8/f5/bcf8f50eac81644e04e06794fb6e2193.jpg" alt="Frame selection" class="w-full aspect-[4/3] object-cover">
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+            <div class="lg:w-1/2">
+                <div class="aspect-[4/3] overflow-hidden bg-ivory dark:bg-dark-surface shadow-xl border border-border dark:border-dark-surface">
+                    <img src="https://images.pexels.com/photos/10322819/pexels-photo-10322819.jpeg" alt="Frame selection" class="w-full h-full object-cover">
+                </div>
             </div>
-            <div class="md:w-1/2">
-                <h2 class="font-serif text-3xl md:text-4xl mb-6">Custom Framing</h2>
-                <ul class="space-y-4 text-warm-gray">
-                    <li class="flex gap-3">
-                        <svg class="w-6 h-6 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                        <div>
-                            <strong class="text-charcoal dark:text-paper font-medium block">Frame Selection</strong>
-                            Thousands of wood, metal, and synthetic profiles.
+            <div class="lg:w-1/2">
+                <span class="text-accent text-xs font-semibold tracking-widest uppercase mb-2 block">Bespoke Guild Framing</span>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl mb-6">Custom Framing Atelier</h2>
+                <p class="text-warm-gray text-base leading-relaxed mb-6">
+                    Custom picture framing at Frame & Preserve is a collaborative curatorial process. We do not use generic, mass-produced pre-cut mouldings. Every single commission begins with an individualized structural assessment of your artwork's medium, paper weight, and aesthetic balance to design an enclosure that enhances without overwhelming.
+                </p>
+                <div class="space-y-6 text-warm-gray">
+                    <div class="flex gap-4 items-start">
+                        <div class="w-10 h-10 rounded-full bg-accent/10 border border-accent/30 text-accent flex items-center justify-center flex-shrink-0 mt-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                         </div>
-                    </li>
-                    <li class="flex gap-3">
-                        <svg class="w-6 h-6 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                         <div>
-                            <strong class="text-charcoal dark:text-paper font-medium block">Matting</strong>
-                            Multi-layer, textured, and museum-grade mats.
+                            <strong class="text-charcoal dark:text-paper font-serif text-lg block mb-1">Architectural Mouldings & Hardwood Selection</strong>
+                            <p class="text-sm leading-relaxed">
+                                Choose from over 450 distinct moulding profiles milled from sustainably harvested North American hardwoods—including American Black Walnut, Rift-Sawn White Oak, Rock Maple, and Cherry. Mouldings are precision miter-cut on double-blade saws, trued with hand planes, and permanently reinforced with internal hardwood splines rather than brittle metal V-nails.
+                            </p>
                         </div>
-                    </li>
-                    <li class="flex gap-3">
-                        <svg class="w-6 h-6 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="w-10 h-10 rounded-full bg-accent/10 border border-accent/30 text-accent flex items-center justify-center flex-shrink-0 mt-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        </div>
                         <div>
-                            <strong class="text-charcoal dark:text-paper font-medium block">Glass Selection</strong>
-                            Clear, non-glare, conservation clear, and museum glass.
+                            <strong class="text-charcoal dark:text-paper font-serif text-lg block mb-1">Archival Cotton Matting & Curatorial Borders</strong>
+                            <p class="text-sm leading-relaxed">
+                                We utilize 100% pure cotton rag matboards (Crescent / Bainbridge Museum Rag) that are completely acid-free and buffered with calcium carbonate to actively neutralize environmental acidity. Available in single, double, and 8-ply extra-thick bevels, as well as hand-wrapped Japanese raw silk and archival linen liners.
+                            </p>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="w-10 h-10 rounded-full bg-accent/10 border border-accent/30 text-accent flex items-center justify-center flex-shrink-0 mt-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        </div>
+                        <div>
+                            <strong class="text-charcoal dark:text-paper font-serif text-lg block mb-1">Optically Pure Museum Glazing</strong>
+                            <p class="text-sm leading-relaxed">
+                                We equip pieces with Tru Vue Museum Glass featuring 99% UV radiation absorption and magnetron-sputtered anti-reflection (<1% visible reflection). For oversized and transit installations, we provide Optium Museum Acrylic—shatter-resistant, anti-static, and optical-grade.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- 3. Art Preservation -->
-<section class="py-24 bg-ivory dark:bg-dark-surface border-b border-border dark:border-dark-bg">
+<!-- 3. Art Preservation (Expanded Comprehensive Content Text) -->
+<section id="art-preservation" class="py-20 md:py-24 bg-ivory dark:bg-dark-surface border-b border-border dark:border-dark-bg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row-reverse gap-16 items-center">
-            <div class="md:w-1/2">
-                <img src="https://images.unsplash.com/photo-1577720580479-7d839d829c73?q=80&w=800" alt="Art preservation" class="w-full aspect-[4/3] object-cover">
+        <div class="flex flex-col lg:flex-row-reverse gap-12 lg:gap-16 items-center">
+            <div class="lg:w-1/2">
+                <div class="aspect-[4/3] overflow-hidden bg-paper dark:bg-dark-bg shadow-xl border border-border dark:border-dark-surface">
+                    <img src="https://images.unsplash.com/photo-1577720580479-7d839d829c73?q=80&w=1200" alt="Art preservation science" class="w-full h-full object-cover">
+                </div>
             </div>
-            <div class="md:w-1/2">
-                <h2 class="font-serif text-3xl md:text-4xl mb-6">Art Preservation</h2>
-                <ul class="space-y-4 text-warm-gray">
-                    <li class="flex gap-3">
-                        <svg class="w-6 h-6 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-                        <div>
-                            <strong class="text-charcoal dark:text-paper font-medium block">Conservation Methods</strong>
-                            Reversible hinging and mounting.
+            <div class="lg:w-1/2">
+                <span class="text-accent text-xs font-semibold tracking-widest uppercase mb-2 block">Conservation Science</span>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl mb-6">Art Preservation Standards</h2>
+                <p class="text-warm-gray text-base leading-relaxed mb-6">
+                    Preservation is not passive storage; it is active environmental defense. Organic art substrates—such as watercolor on cotton, charcoal on rag, antique documents, and oil pastels—continually interact with temperature, humidity, airborne pollutants, and photochemical light energy. Our certified conservation protocols halt degradation permanently.
+                </p>
+                <div class="space-y-6 text-warm-gray">
+                    <div class="flex gap-4 items-start">
+                        <div class="w-10 h-10 rounded-full bg-accent/10 border border-accent/30 text-accent flex items-center justify-center flex-shrink-0 mt-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
                         </div>
-                    </li>
-                    <li class="flex gap-3">
-                        <svg class="w-6 h-6 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
                         <div>
-                            <strong class="text-charcoal dark:text-paper font-medium block">Acid-Free Mounting</strong>
-                            Protecting the delicate chemistry of original art.
+                            <strong class="text-charcoal dark:text-paper font-serif text-lg block mb-1">100% Reversible Mulberry Paper Hinging</strong>
+                            <p class="text-sm leading-relaxed">
+                                In strict compliance with International Institute for Conservation (IIC) tenets, no non-reversible adhesive ever touches your art. We mount using hand-torn Japanese Kozo mulberry paper adhered with pure, gluten-purified wheat starch paste, easily released with distilled water without leaving trace marks or residue.
+                            </p>
                         </div>
-                    </li>
-                    <li class="flex gap-3">
-                        <svg class="w-6 h-6 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="w-10 h-10 rounded-full bg-accent/10 border border-accent/30 text-accent flex items-center justify-center flex-shrink-0 mt-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                        </div>
                         <div>
-                            <strong class="text-charcoal dark:text-paper font-medium block">Humidity & UV</strong>
-                            Sealed enclosures that stabilize environmental factors.
+                            <strong class="text-charcoal dark:text-paper font-serif text-lg block mb-1">Micro-Climate Vapor & Dust Barrier Sealing</strong>
+                            <p class="text-sm leading-relaxed">
+                                Our frames feature archival metalized film vapour barriers, closed-cell foam backing, and impermeable conservation dust covers. This isolates the inner package from moisture swings, household humidity surges, airborne greases, and insect intrusions.
+                            </p>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="w-10 h-10 rounded-full bg-accent/10 border border-accent/30 text-accent flex items-center justify-center flex-shrink-0 mt-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                        </div>
+                        <div>
+                            <strong class="text-charcoal dark:text-paper font-serif text-lg block mb-1">Optical Separation & Glazing Spacers</strong>
+                            <p class="text-sm leading-relaxed">
+                                Glazing must never contact the art surface directly, as temperature condensation causes pigments to adhere permanently to glass. We incorporate hidden archival acrylic spacers or deep mat windows to maintain a safe protective air chamber.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- 4. Specialty Framing -->
-<section class="py-24 bg-paper dark:bg-dark-bg border-b border-border dark:border-dark-surface">
+<!-- 4. Specialty Framing (Expanded Rich Content for all 6 categories) -->
+<section id="shadow-boxes" class="py-20 md:py-24 bg-paper dark:bg-dark-bg border-b border-border dark:border-dark-surface">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="font-serif text-3xl md:text-4xl mb-12 text-center">Specialty Framing</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <div class="border border-border dark:border-dark-surface p-6 bg-ivory dark:bg-dark-surface">
-                <h3 class="font-serif text-xl mb-2">Canvas</h3>
-                <p class="text-warm-gray text-sm">Professional stretching and beautiful float frames for oils and acrylics.</p>
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-accent text-xs font-semibold tracking-widest uppercase mb-2 block">Dimensional & Unique Pieces</span>
+            <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl mb-4">Specialty Framing Solutions</h2>
+            <p class="text-warm-gray text-sm sm:text-base leading-relaxed">
+                Beyond flat works on paper, our workshop engineers custom structural enclosures for textiles, canvas floaters, sports memorabilia, and 3D architectural relics.
+            </p>
+        </div>
+        <div id="canvas-framing" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Specialty 1: Canvas -->
+            <div class="border border-border dark:border-dark-surface p-8 bg-ivory dark:bg-dark-surface flex flex-col justify-between shadow-sm hover:shadow-md hover:border-accent transition-all group">
+                <div>
+                    <span class="text-accent text-xs font-semibold uppercase tracking-wider block mb-2">01. Original Art</span>
+                    <h3 class="font-serif text-2xl mb-3 group-hover:text-accent transition-colors">Canvas Floaters</h3>
+                    <p class="text-warm-gray text-sm leading-relaxed mb-4">
+                        Custom hardwood floating frames designed specifically for gallery-wrapped oils and acrylics. A recessed 3/8-inch shadow channel creates the illusion that the painted canvas is levitating within the hardwood surround without obscuring the canvas edges.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-border/40 dark:border-dark-bg text-xs text-warm-gray flex justify-between items-center">
+                    <span>Solid Walnut / Oak / Maple</span>
+                </div>
             </div>
-            <div class="border border-border dark:border-dark-surface p-6 bg-ivory dark:bg-dark-surface">
-                <h3 class="font-serif text-xl mb-2">Jerseys</h3>
-                <p class="text-warm-gray text-sm">Carefully pinned sports memorabilia with deep shadow boxes.</p>
+
+            <!-- Specialty 2: Jerseys -->
+            <div class="border border-border dark:border-dark-surface p-8 bg-ivory dark:bg-dark-surface flex flex-col justify-between shadow-sm hover:shadow-md hover:border-accent transition-all group">
+                <div>
+                    <span class="text-accent text-xs font-semibold uppercase tracking-wider block mb-2">02. Sports & Textiles</span>
+                    <h3 class="font-serif text-2xl mb-3 group-hover:text-accent transition-colors">Athletic Jerseys</h3>
+                    <p class="text-warm-gray text-sm leading-relaxed mb-4">
+                        Hand-formed archival garment forms padded with acid-free batting to eliminate fabric creases. The textile is secured with hand-stitched invisible cotton threads—never glues or harmful staple guns—preserving the original jerseys for decades.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-border/40 dark:border-dark-bg text-xs text-warm-gray flex justify-between items-center">
+                    <span>Hand-Stitched Non-Invasive</span>
+                   
+                </div>
             </div>
-            <div class="border border-border dark:border-dark-surface p-6 bg-ivory dark:bg-dark-surface">
-                <h3 class="font-serif text-xl mb-2">Certificates</h3>
-                <p class="text-warm-gray text-sm">Elegant diploma and award framing to celebrate achievements.</p>
+
+            <!-- Specialty 3: Certificates -->
+            <div class="border border-border dark:border-dark-surface p-8 bg-ivory dark:bg-dark-surface flex flex-col justify-between shadow-sm hover:shadow-md hover:border-accent transition-all group">
+                <div>
+                    <span class="text-accent text-xs font-semibold uppercase tracking-wider block mb-2">03. Documents & Blueprints</span>
+                    <h3 class="font-serif text-2xl mb-3 group-hover:text-accent transition-colors">Parchments & Diplomas</h3>
+                    <p class="text-warm-gray text-sm leading-relaxed mb-4">
+                        Sheepskin vellum, diplomas, historic patents, and architectural blueprints demand specific tension-relieving mounts. We incorporate double 100% rag mats with hand-cut French lines and UV Museum Glass to prevent ink fading and paper cockling.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-border/40 dark:border-dark-bg text-xs text-warm-gray flex justify-between items-center">
+                    <span>99% UV Barrier Included</span>
+                    
+                </div>
             </div>
-            <div class="border border-border dark:border-dark-surface p-6 bg-ivory dark:bg-dark-surface">
-                <h3 class="font-serif text-xl mb-2">Memorabilia</h3>
-                <p class="text-warm-gray text-sm">Tickets, letters, and delicate paper artifacts preserved beautifully.</p>
+
+            <!-- Specialty 4: Memorabilia -->
+            <div class="border border-border dark:border-dark-surface p-8 bg-ivory dark:bg-dark-surface flex flex-col justify-between shadow-sm hover:shadow-md hover:border-accent transition-all group">
+                <div>
+                    <span class="text-accent text-xs font-semibold uppercase tracking-wider block mb-2">04. Paper Ephemera</span>
+                    <h3 class="font-serif text-2xl mb-3 group-hover:text-accent transition-colors">Historic Memorabilia</h3>
+                    <p class="text-warm-gray text-sm leading-relaxed mb-4">
+                        Concert stubs, vintage postcards, handwritten correspondence, and historical broadsides require encapsulated polyester (Melinex 516) archival mounts that hold fragile paper without any chemical adhesives touching the original item.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-border/40 dark:border-dark-bg text-xs text-warm-gray flex justify-between items-center">
+                    <span>Zero Chemical Contact</span>
+                  
+                </div>
             </div>
-            <div class="border border-border dark:border-dark-surface p-6 bg-ivory dark:bg-dark-surface">
-                <h3 class="font-serif text-xl mb-2">Shadow Boxes</h3>
-                <p class="text-warm-gray text-sm">3D objects mounted securely in custom-depth enclosures.</p>
+
+            <!-- Specialty 5: Shadow Boxes -->
+            <div class="border border-border dark:border-dark-surface p-8 bg-ivory dark:bg-dark-surface flex flex-col justify-between shadow-sm hover:shadow-md hover:border-accent transition-all group">
+                <div>
+                    <span class="text-accent text-xs font-semibold uppercase tracking-wider block mb-2">05. 3D Architectural Boxes</span>
+                    <h3 class="font-serif text-2xl mb-3 group-hover:text-accent transition-colors">Deep Shadow Boxes</h3>
+                    <p class="text-warm-gray text-sm leading-relaxed mb-4">
+                        Engineered with extra-deep rabbets from 2.5 to 6 inches, our shadow boxes feature fabric-wrapped inner sidewalls that eliminate glare bounce. Perfect for military medals, pocket watches, family heirloom silver, and sculpted reliefs.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-border/40 dark:border-dark-bg text-xs text-warm-gray flex justify-between items-center">
+                    <span>Depths up to 6 Inches</span>
+                </div>
             </div>
-            <div class="border border-border dark:border-dark-surface p-6 bg-ivory dark:bg-dark-surface">
-                <h3 class="font-serif text-xl mb-2">Objects</h3>
-                <p class="text-warm-gray text-sm">From medals to heirlooms, we build frames for unique physical items.</p>
+
+            <!-- Specialty 6: Objects -->
+            <div class="border border-border dark:border-dark-surface p-8 bg-ivory dark:bg-dark-surface flex flex-col justify-between shadow-sm hover:shadow-md hover:border-accent transition-all group">
+                <div>
+                    <span class="text-accent text-xs font-semibold uppercase tracking-wider block mb-2">06. Rare Antiquities</span>
+                    <h3 class="font-serif text-2xl mb-3 group-hover:text-accent transition-colors">Antiquities & Objects</h3>
+                    <p class="text-warm-gray text-sm leading-relaxed mb-4">
+                        Custom armature mounts hand-forged in brass and powder-coated steel to support archaeological pottery, ceremonial daggers, and mineral specimens. Fully isolated with inert conservation silicone cushions.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-border/40 dark:border-dark-bg text-xs text-warm-gray flex justify-between items-center">
+                    <span>Custom Brass Armatures</span>
+                  
+                </div>
             </div>
         </div>
     </div>
@@ -321,6 +437,7 @@
                         <li><a href="about.html" class="hover:text-accent transition-colors">About Atelier</a></li>
                         <li><a href="services.html" class="hover:text-accent transition-colors">Services</a></li>
                         <li><a href="gallery.html" class="hover:text-accent transition-colors">Gallery</a></li>
+                        <li><a href="blog.html" class="hover:text-accent transition-colors">Blog</a></li>
                         <li><a href="contact.html" class="hover:text-accent transition-colors">Contact</a></li>
                     </ul>
                 </div>

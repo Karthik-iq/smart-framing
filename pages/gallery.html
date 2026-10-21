@@ -58,7 +58,7 @@
                     </a>
                 </div>
 
-                <div class="hidden lg:flex items-center space-x-8">
+                <div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
                     <div class="relative group">
                         <button class="nav-link flex items-center gap-1 hover:text-accent transition-colors">
                             Home
@@ -79,7 +79,8 @@
                     </div>
                     <a href="about.html" class="nav-link hover:text-accent transition-colors">About</a>
                     <a href="services.html" class="nav-link hover:text-accent transition-colors">Services</a>
-                    <a href="gallery.html" class="nav-link hover:text-accent transition-colors">Gallery</a>
+                    <a href="gallery.html" class="nav-link text-accent hover:text-accent transition-colors">Gallery</a>
+                    <a href="blog.html" class="nav-link hover:text-accent transition-colors">Blog</a>
                     <a href="contact.html" class="nav-link hover:text-accent transition-colors">Contact</a>
 
                     <div class="flex items-center gap-4 pl-4 border-l border-border dark:border-dark-surface">
@@ -119,13 +120,14 @@
 
         <div id="mobile-menu"
             class="hidden lg:hidden bg-paper dark:bg-dark-surface border-b border-border dark:border-dark-surface">
-            <div class="px-4 pt-2 pb-4 space-y-1">
+            <div class="px-4 pt-2 pb-8 space-y-1">
                 <div class="font-medium px-3 py-2 text-warm-gray">Home</div>
                 <a href="../index.html" class="block px-6 py-2 hover:bg-ivory dark:hover:bg-charcoal">Classic Studio</a>
                 <a href="home-2.html" class="block px-6 py-2 hover:bg-ivory dark:hover:bg-charcoal">Modern Atelier</a>
                 <a href="about.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">About</a>
                 <a href="services.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Services</a>
                 <a href="gallery.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Gallery</a>
+                <a href="blog.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Blog</a>
                 <a href="contact.html" class="block px-3 py-2 hover:bg-ivory dark:hover:bg-charcoal">Contact</a>
                 <div class="border-t border-border dark:border-dark-surface my-2"></div>
                 <div class="flex justify-start gap-4 px-3 py-2 border-t border-border dark:border-dark-surface mt-2 pt-4">
@@ -148,15 +150,21 @@
     </nav>
 
     <main class="pt-20">
-        <!-- 1. Hero -->
-        <section class="relative w-full h-[50vh] flex items-center justify-center bg-charcoal">
-            <img src="https://i.pinimg.com/1200x/67/3d/05/673d052d74911421153dcdb9cf99bf0a.jpg" alt="Gallery"
-                class="absolute inset-0 w-full h-full object-cover opacity-75">
-            <div class="absolute inset-0 bg-charcoal/50 dark:bg-black/60 pointer-events-none"></div>
-            <div class="relative z-10 text-center px-4">
-                <h1 class="font-serif text-4xl md:text-6xl text-paper mb-4 drop-shadow-2xl">Our Portfolio</h1>
-                <p class="text-border text-lg font-light max-w-xl mx-auto">Explore our diverse collection of custom
-                    framing and preservation projects.</p>
+        <!-- 1. Hero (100% Clear Image Visual - Zero Overlays, Crisp Text Shadow) -->
+        <section class="relative w-full h-[65vh] min-h-[480px] max-h-[600px] flex items-center justify-center overflow-hidden bg-charcoal">
+            <img src="https://images.pexels.com/photos/4978974/pexels-photo-4978974.jpeg" alt="Gallery" class="absolute inset-0 w-full h-full object-cover">
+            
+            <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white py-8">
+                <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-4 sm:mb-6 font-medium leading-tight px-2 [text-shadow:_0_2px_4px_rgba(0,0,0,0.95),_0_4px_16px_rgba(0,0,0,0.95),_0_8px_32px_rgba(0,0,0,0.95)]">
+                    Our Framing Portfolio
+                </h1>
+                <p class="text-white text-sm sm:text-base md:text-lg lg:text-xl mb-8 sm:mb-10 max-w-2xl mx-auto font-normal leading-relaxed px-2 [text-shadow:_0_1px_3px_rgba(0,0,0,0.95),_0_3px_12px_rgba(0,0,0,0.95),_0_6px_24px_rgba(0,0,0,0.95)]">
+                    Explore our diverse collection of custom framing commissions, fine art photography enclosures, and archival museum preservations.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-xs sm:max-w-none mx-auto">
+                    <a href="contact.html" class="bg-charcoal text-paper hover:bg-accent dark:bg-paper dark:text-charcoal px-8 py-3.5 transition-colors text-xs sm:text-sm font-semibold tracking-wider uppercase shadow-2xl border border-white/20">Commission a Frame</a>
+                    <a href="#classic" class="bg-accent text-paper px-8 py-3.5 hover:bg-accent-dark transition-all text-xs sm:text-sm font-semibold tracking-wider uppercase shadow-2xl">Browse Collections</a>
+                </div>
             </div>
         </section>
 
@@ -305,27 +313,36 @@
     </div>
 </section>
 
-<!-- 4. Featured Collection -->
-        <section class="py-24 bg-paper dark:bg-dark-bg border-b border-border dark:border-dark-surface">
+<!-- 4. Featured Collection (High-Contrast Text Fix - Issue 9) -->
+        <section class="py-20 md:py-24 bg-paper dark:bg-dark-bg border-b border-border dark:border-dark-surface">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="font-serif text-3xl md:text-4xl mb-12 text-center">Curator's Choice</h2>
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-accent text-xs font-semibold tracking-widest uppercase mb-2 block">Featured Series</span>
+                    <h2 class="font-serif text-3xl md:text-4xl mb-3 text-center">Curator's Choice</h2>
+                    <p class="text-warm-gray text-sm">Two of our atelier's most celebrated bespoke framing collections.</p>
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="relative group overflow-hidden">
+                    <!-- Collection 1 -->
+                    <div class="relative group overflow-hidden border border-border dark:border-dark-surface shadow-md">
                         <img src="https://images.unsplash.com/photo-1550684376-ef3dea3cf1c3?w=800"
-                            alt="Featured Collection"
+                            alt="The Metropolitan Collection"
                             class="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-700">
-                        <div class="absolute bottom-6 left-6 bg-paper dark:bg-dark-surface p-6 shadow-xl">
-                            <h3 class="font-serif text-xl mb-1">The Metropolitan Collection</h3>
-                            <p class="text-warm-gray text-sm">Museum-grade framing for high-value artwork.</p>
+                        <div class="absolute bottom-6 left-6 right-6 sm:right-auto bg-charcoal/95 dark:bg-dark-surface/95 border border-accent/60 p-6 shadow-2xl backdrop-blur-md max-w-md">
+                            <span class="text-accent text-xs font-semibold uppercase tracking-widest block mb-1">Curatorial Series</span>
+                            <h3 class="font-serif text-xl sm:text-2xl text-paper font-medium mb-1 drop-shadow-sm">The Metropolitan Collection</h3>
+                            <p class="text-paper/90 text-sm font-light leading-relaxed">Museum-grade hardwood framing engineered for high-value gallery exhibitions and private art collections.</p>
                         </div>
                     </div>
-                    <div class="relative group overflow-hidden">
+
+                    <!-- Collection 2 -->
+                    <div class="relative group overflow-hidden border border-border dark:border-dark-surface shadow-md">
                         <img src="https://images.unsplash.com/photo-1563298723-dcfebaa392e3?w=800"
-                            alt="Featured Collection"
+                            alt="The Artisan Series"
                             class="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-700">
-                        <div class="absolute bottom-6 left-6 bg-paper dark:bg-dark-surface p-6 shadow-xl">
-                            <h3 class="font-serif text-xl mb-1">The Artisan Series</h3>
-                            <p class="text-warm-gray text-sm">Hand-finished woods with organic textures.</p>
+                        <div class="absolute bottom-6 left-6 right-6 sm:right-auto bg-charcoal/95 dark:bg-dark-surface/95 border border-accent/60 p-6 shadow-2xl backdrop-blur-md max-w-md">
+                            <span class="text-accent text-xs font-semibold uppercase tracking-widest block mb-1">Atelier Reserve</span>
+                            <h3 class="font-serif text-xl sm:text-2xl text-paper font-medium mb-1 drop-shadow-sm">The Artisan Series</h3>
+                            <p class="text-paper/90 text-sm font-light leading-relaxed">Hand-finished sustainable North American woods with organic wax textures, spline joinery, and float reveals.</p>
                         </div>
                     </div>
                 </div>
@@ -444,6 +461,7 @@
                         <li><a href="about.html" class="hover:text-accent transition-colors">About Atelier</a></li>
                         <li><a href="services.html" class="hover:text-accent transition-colors">Services</a></li>
                         <li><a href="gallery.html" class="hover:text-accent transition-colors">Gallery</a></li>
+                        <li><a href="blog.html" class="hover:text-accent transition-colors">Blog</a></li>
                         <li><a href="contact.html" class="hover:text-accent transition-colors">Contact</a></li>
                     </ul>
                 </div>
