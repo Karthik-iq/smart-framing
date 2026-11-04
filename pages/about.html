@@ -48,7 +48,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="../index.html" class="flex items-center gap-2 group">
+                    <a href="../index.html" class="flex items-center gap-2 group h-10">
                         <svg class="w-8 h-8 text-accent group-hover:text-accent-dark transition-colors" fill="none"
                             stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5"
@@ -61,7 +61,7 @@
 
                 <div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
                     <div class="relative group">
-                        <button class="nav-link flex items-center gap-1 hover:text-accent transition-colors">
+                        <button class="nav-link inline-flex items-center gap-1 h-10 text-sm font-medium hover:text-accent transition-colors">
                             Home
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -78,14 +78,15 @@
                                 Atelier</a>
                         </div>
                     </div>
-                    <a href="about.html" class="nav-link text-accent hover:text-accent transition-colors">About</a>
-                    <a href="services.html" class="nav-link hover:text-accent transition-colors">Services</a>
-                    <a href="gallery.html" class="nav-link hover:text-accent transition-colors">Gallery</a>
-                    <a href="blog.html" class="nav-link hover:text-accent transition-colors">Blog</a>
-                    <a href="contact.html" class="nav-link hover:text-accent transition-colors">Contact</a>
+                    <a href="about.html" class="nav-link inline-flex items-center h-10 text-sm font-medium text-accent hover:text-accent transition-colors">About</a>
+                    <a href="services.html" class="nav-link inline-flex items-center h-10 text-sm font-medium hover:text-accent transition-colors">Services</a>
+                    <a href="gallery.html" class="nav-link inline-flex items-center h-10 text-sm font-medium hover:text-accent transition-colors">Gallery</a>
+                    <a href="blog.html" class="nav-link inline-flex items-center h-10 text-sm font-medium hover:text-accent transition-colors">Blog</a>
+                    <a href="contact.html" class="nav-link inline-flex items-center h-10 text-sm font-medium hover:text-accent transition-colors">Contact</a>
 
-                    <div class="flex items-center gap-4 pl-4 border-l border-border dark:border-dark-surface">
-                        <button class="theme-toggle p-2 hover:text-accent transition-colors" aria-label="Toggle Theme">
+                    <div class="flex items-center gap-3">
+                        <span class="h-6 w-px bg-border dark:bg-dark-surface mx-1" aria-hidden="true"></span>
+                        <button class="theme-toggle w-10 h-10 inline-flex items-center justify-center rounded border border-border dark:border-dark-surface hover:text-accent hover:border-accent transition-colors" aria-label="Toggle Theme">
                             <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
@@ -96,20 +97,20 @@
                                     d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                             </svg>
                         </button>
-                        <button class="rtl-toggle p-2 hover:text-accent transition-colors" aria-label="Toggle RTL"><svg
+                        <button class="rtl-toggle w-10 h-10 inline-flex items-center justify-center rounded border border-border dark:border-dark-surface hover:text-accent hover:border-accent transition-colors" aria-label="Toggle RTL"><svg
                                 class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                             </svg></button>
 
                         <a href="contact.html"
-                            class="bg-charcoal dark:bg-paper text-paper dark:text-charcoal px-5 py-2 hover:bg-accent dark:hover:bg-border transition-colors text-sm font-medium">Get
+                            class="inline-flex items-center justify-center h-10 px-5 bg-charcoal dark:bg-paper text-paper dark:text-charcoal rounded hover:bg-accent dark:hover:bg-border transition-colors text-sm font-medium whitespace-nowrap">Get
                             a Quote</a>
                     </div>
                 </div>
 
                 <div class="lg:hidden flex items-center gap-4">
-                    <button id="mobile-menu-btn" class="p-2 hover:text-accent transition-colors"
+                    <button id="mobile-menu-btn" class="w-10 h-10 inline-flex items-center justify-center rounded border border-border dark:border-dark-surface hover:text-accent transition-colors"
                         aria-label="Toggle Menu">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -192,11 +193,11 @@
             </div>
         </section>
 
-        <!-- 2. Heritage Story Section -->
+        <!-- 2. Heritage Story Section (Responsive 2-col on 768px tablet) -->
         <section class="py-24 bg-paper dark:bg-dark-bg border-b border-border dark:border-dark-surface">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-                    <div class="lg:col-span-6 relative">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <div class="relative">
                         <div
                             class="aspect-[4/5] bg-ivory dark:bg-dark-surface overflow-hidden shadow-xl border border-border dark:border-dark-surface">
                             <img src="https://i.pinimg.com/736x/22/e5/b1/22e5b1785599fc12d1c0fba9a7a8734a.jpg"
@@ -211,7 +212,7 @@
                         </div>
                     </div>
 
-                    <div class="lg:col-span-6">
+                    <div>
                         <span class="text-accent text-sm font-semibold tracking-widest uppercase mb-3 block">Our
                             Heritage</span>
                         <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl mb-6 leading-tight">
@@ -297,14 +298,13 @@
                     </p>
                 </div>
 
-                <!-- Changed to md:grid-cols-2 to prevent cramping on small tablets, adjusted gaps for better scaling -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <!-- 3-Column Responsive Grid (Clean Alignment on Tablet & Desktop) -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
 
                     <!-- Pillar 1 -->
-                    <!-- Adjusted padding: p-6 lg:p-8 ensures the cards don't run out of text room at exactly 1024px -->
                     <div
-                        class="bg-ivory dark:bg-dark-surface p-6 lg:p-8 border border-border dark:border-dark-surface hover:border-accent transition-all duration-300 flex flex-col h-full shadow-sm">
-                        <div class="flex-grow">
+                        class="bg-ivory dark:bg-dark-surface p-6 lg:p-8 border border-border dark:border-dark-surface hover:border-accent transition-all duration-300 flex flex-col justify-between h-full shadow-sm">
+                        <div class="flex-grow flex flex-col">
                             <div
                                 class="w-12 h-12 bg-accent/10 border border-accent/30 text-accent flex items-center justify-center mb-6">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -312,15 +312,15 @@
                                         d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                                 </svg>
                             </div>
-                            <h3 class="font-serif text-xl lg:text-2xl mb-4">100% Pure Rag Archival Mats</h3>
-                            <p class="text-warm-gray text-sm leading-relaxed mb-6">
+                            <h3 class="font-serif text-xl lg:text-2xl mb-4 min-h-[3.5rem] lg:min-h-[4rem] flex items-start">100% Pure Rag Archival Mats</h3>
+                            <p class="text-warm-gray text-sm leading-relaxed mb-6 min-h-[6rem] lg:min-h-[6.5rem]">
                                 We never use lignin or wood-pulp based matboards. Our mats are crafted exclusively from
                                 naturally acid-free, buffered 100% cotton fibers that will never yellow, bleed
                                 chemicals, or harm delicate paper emulsions.
                             </p>
                         </div>
                         <ul
-                            class="text-xs space-y-2 text-warm-gray border-t border-border dark:border-dark-bg pt-4 mt-auto">
+                            class="text-xs space-y-2 text-warm-gray border-t border-border dark:border-dark-surface pt-4 mt-auto">
                             <li class="flex items-center gap-2">
                                 <span class="text-accent font-bold">✓</span> Certified acid-free & lignin-free
                             </li>
@@ -332,8 +332,8 @@
 
                     <!-- Pillar 2 -->
                     <div
-                        class="bg-ivory dark:bg-dark-surface p-6 lg:p-8 border border-border dark:border-dark-surface hover:border-accent transition-all duration-300 flex flex-col h-full shadow-sm">
-                        <div class="flex-grow">
+                        class="bg-ivory dark:bg-dark-surface p-6 lg:p-8 border border-border dark:border-dark-surface hover:border-accent transition-all duration-300 flex flex-col justify-between h-full shadow-sm">
+                        <div class="flex-grow flex flex-col">
                             <div
                                 class="w-12 h-12 bg-accent/10 border border-accent/30 text-accent flex items-center justify-center mb-6">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -341,15 +341,15 @@
                                         d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                                 </svg>
                             </div>
-                            <h3 class="font-serif text-xl lg:text-2xl mb-4">Optically Pure Museum Glazing</h3>
-                            <p class="text-warm-gray text-sm leading-relaxed mb-6">
+                            <h3 class="font-serif text-xl lg:text-2xl mb-4 min-h-[3.5rem] lg:min-h-[4rem] flex items-start">Optically Pure Museum Glazing</h3>
+                            <p class="text-warm-gray text-sm leading-relaxed mb-6 min-h-[6rem] lg:min-h-[6.5rem]">
                                 Harmful ultraviolet frequencies degrade organic pigments within months. Our
                                 anti-reflective museum glass and acrylics filter out up to 99% of harmful UV rays while
                                 transmitting light with crystal clarity and virtually zero glare.
                             </p>
                         </div>
                         <ul
-                            class="text-xs space-y-2 text-warm-gray border-t border-border dark:border-dark-bg pt-4 mt-auto">
+                            class="text-xs space-y-2 text-warm-gray border-t border-border dark:border-dark-surface pt-4 mt-auto">
                             <li class="flex items-center gap-2">
                                 <span class="text-accent font-bold">✓</span> 99% UV-blocking optical filtration
                             </li>
@@ -360,10 +360,9 @@
                     </div>
 
                     <!-- Pillar 3 -->
-                    <!-- Updated to md:col-span-2 to match the new 2-column breakpoint, resets at lg -->
                     <div
-                        class="bg-ivory dark:bg-dark-surface p-6 lg:p-8 border border-border dark:border-dark-surface hover:border-accent transition-all duration-300 flex flex-col h-full shadow-sm md:col-span-2 lg:col-span-1">
-                        <div class="flex-grow">
+                        class="bg-ivory dark:bg-dark-surface p-6 lg:p-8 border border-border dark:border-dark-surface hover:border-accent transition-all duration-300 flex flex-col justify-between h-full shadow-sm">
+                        <div class="flex-grow flex flex-col">
                             <div
                                 class="w-12 h-12 bg-accent/10 border border-accent/30 text-accent flex items-center justify-center mb-6">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -373,20 +372,20 @@
                                         d="M9 9h6v6H9z" />
                                 </svg>
                             </div>
-                            <h3 class="font-serif text-xl lg:text-2xl mb-4">Reversible Artisan Hinging</h3>
-                            <p class="text-warm-gray text-sm leading-relaxed mb-6">
+                            <h3 class="font-serif text-xl lg:text-2xl mb-4 min-h-[3.5rem] lg:min-h-[4rem] flex items-start">Reversible Artisan Hinging</h3>
+                            <p class="text-warm-gray text-sm leading-relaxed mb-6 min-h-[6rem] lg:min-h-[6.5rem]">
                                 The cornerstone of museum conservation: any mounting technique must be 100% reversible
                                 without trace. We utilize pure Japanese Kozo mulberry paper and archival wheat-starch
                                 paste cooked fresh in our atelier.
                             </p>
                         </div>
                         <ul
-                            class="text-xs space-y-2 text-warm-gray border-t border-border dark:border-dark-bg pt-4 mt-auto">
+                            class="text-xs space-y-2 text-warm-gray border-t border-border dark:border-dark-surface pt-4 mt-auto">
                             <li class="flex items-center gap-2">
-                                <span class="text-accent font-bold">✓</span> Zero pressure-sensitive
+                                <span class="text-accent font-bold">✓</span> Zero pressure-sensitive adhesive tapes
                             </li>
                             <li class="flex items-center gap-2">
-                                <span class="text-accent font-bold">✓</span> Natural expansion & contraction
+                                <span class="text-accent font-bold">✓</span> Natural expansion & contraction hinges
                             </li>
                         </ul>
                     </div>
